@@ -35,6 +35,8 @@ class Active_layer_Pair:
         self.Active_layer_1 = Active_layer_1                                                                    # We also store the layer classes for convenience
         self.Active_layer_2 = Active_layer_2
         self.Solar_spectrum = Solar_data
+        self.Voc1 = Active_layer_1.Voc
+        self.Voc2 = Active_layer_2.Voc
         # Here is where we actually divide the spectrum between the two EQE curves and calculate the resulting Jsc contribution of each cell for each dividing wavelength
         # The function, further described in the EQE_To_Jsc_Integrator script, gives out the Dividing_wavelength_list
         self.Dividing_wavelength_list, self.Jsc_Dividing_wavelength_graph_1,self. Jsc_Dividing_wavelength_graph_2, self.Jsc_Dividing_wavelength_graph_total = EtJ.EQE_vs_div_wavelength_curve(Active_layer_1.EQE_curve,Active_layer_2.EQE_curve,Solar_data,Active_layer_1.Integrated_Jsc_correction_factor,Active_layer_2.Integrated_Jsc_correction_factor)
