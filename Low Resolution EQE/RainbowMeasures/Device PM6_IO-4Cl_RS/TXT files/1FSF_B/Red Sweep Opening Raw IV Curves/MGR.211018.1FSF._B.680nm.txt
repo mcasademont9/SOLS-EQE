@@ -1,0 +1,1 @@
+Voltage (V)	Current (A)	Current Density (A/m^2)	 Dividing Wavelength (nm) = 680  Light Power Density (W/m^2) = 1053.550606  Total Light Power Density (W/m^2) = 1053.550606	
